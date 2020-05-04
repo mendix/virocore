@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		130F15E922DD3BF7009983B3 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9989022146338400EA9ED3 /* Vision.framework */; };
-		130F15EA22DD3C00009983B3 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9988FF2143564600EA9ED3 /* CoreML.framework */; };
+		130F15EA22DD3C00009983B3 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9988FF2143564600EA9ED3 /* CoreML.framework */; platformFilter = maccatalyst; };
 		130F15EB22DD3C1E009983B3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACA1B6B22A8467000611602 /* MobileCoreServices.framework */; };
-		130F15EC22DD3EC6009983B3 /* bodymesh.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5428A2297297300D2AFBB /* bodymesh.mlmodel */; };
-		130F15ED22DD3ECE009983B3 /* hourglass_2_1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE50432228D46D0043220B /* hourglass_2_1.mlmodel */; };
+		130F15EC22DD3EC6009983B3 /* bodymesh.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5428A2297297300D2AFBB /* bodymesh.mlmodel */; platformFilter = maccatalyst; };
+		130F15ED22DD3ECE009983B3 /* hourglass_2_1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE50432228D46D0043220B /* hourglass_2_1.mlmodel */; platformFilter = maccatalyst; };
 		130F15EE22DD3ED6009983B3 /* VROVisionEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC542862296144F00D2AFBB /* VROVisionEngine.h */; };
 		130F15EF22DD3EE7009983B3 /* VROBodyMesheriOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC542822295D98700D2AFBB /* VROBodyMesheriOS.h */; };
 		130F15F022DD3EF1009983B3 /* VROBodyMesheriOS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FC542812295D98700D2AFBB /* VROBodyMesheriOS.cpp */; };
@@ -645,7 +645,7 @@
 		8B835CBA21F667430043F172 /* VROBodyPlayeriOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B835CB921F667430043F172 /* VROBodyPlayeriOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B835CBC21F6679F0043F172 /* VROBodyPlayeriOS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B835CBB21F6679F0043F172 /* VROBodyPlayeriOS.cpp */; };
 		8B835CBD21F6679F0043F172 /* VROBodyPlayeriOS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B835CBB21F6679F0043F172 /* VROBodyPlayeriOS.cpp */; };
-		8B9989002143564600EA9ED3 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9988FF2143564600EA9ED3 /* CoreML.framework */; };
+		8B9989002143564600EA9ED3 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9988FF2143564600EA9ED3 /* CoreML.framework */; platformFilter = maccatalyst; settings = {ATTRIBUTES = (Required, ); }; };
 		8B9989032146338400EA9ED3 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9989022146338400EA9ED3 /* Vision.framework */; };
 		8B99890421463D6C00EA9ED3 /* VROBodyTrackerTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9988FC21431BFF00EA9ED3 /* VROBodyTrackerTest.h */; };
 		8B99890521463D6C00EA9ED3 /* VROBodyTrackerTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9988FC21431BFF00EA9ED3 /* VROBodyTrackerTest.h */; };
@@ -1054,7 +1054,7 @@
 		8FAE18CC1EE79D880021C7BB /* VROARCameraiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAE18CA1EE79D880021C7BB /* VROARCameraiOS.h */; };
 		8FAE23C71CE3F61300E98B47 /* VROGeometrySubstrateOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FB659181CD839DC00D036EB /* VROGeometrySubstrateOpenGL.cpp */; };
 		8FAE23C81CE3F61700E98B47 /* VROMaterialSubstrateOpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FB6591C1CD839FC00D036EB /* VROMaterialSubstrateOpenGL.cpp */; };
-		8FAE50442228D46D0043220B /* hourglass_2_1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE50432228D46D0043220B /* hourglass_2_1.mlmodel */; };
+		8FAE50442228D46D0043220B /* hourglass_2_1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE50432228D46D0043220B /* hourglass_2_1.mlmodel */; platformFilter = maccatalyst; };
 		8FAE504722298DCD0043220B /* VROPoseFilterEuro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE504522298DCD0043220B /* VROPoseFilterEuro.cpp */; };
 		8FAE504822298DCD0043220B /* VROPoseFilterEuro.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAE504622298DCD0043220B /* VROPoseFilterEuro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FAE504C222C3CD40043220B /* DeviceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FAE5049222C3CD40043220B /* DeviceList.plist */; };
@@ -1063,10 +1063,10 @@
 		8FAE504F222C3CD40043220B /* VRODeviceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAE504A222C3CD40043220B /* VRODeviceUtil.h */; };
 		8FAE5050222C3CD40043220B /* VRODeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE504B222C3CD40043220B /* VRODeviceUtil.m */; };
 		8FAE5051222C3CD40043220B /* VRODeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE504B222C3CD40043220B /* VRODeviceUtil.m */; };
-		8FAE5054222C6BF10043220B /* hourglass_2_1_ds_t.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE5052222C6BF10043220B /* hourglass_2_1_ds_t.mlmodel */; };
-		8FAE5055222C6BF10043220B /* hourglass_2_1_ds_t.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE5052222C6BF10043220B /* hourglass_2_1_ds_t.mlmodel */; };
-		8FAE5056222C6BF10043220B /* hourglass_2_1_t.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE5053222C6BF10043220B /* hourglass_2_1_t.mlmodel */; };
-		8FAE5057222C6BF10043220B /* hourglass_2_1_t.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE5053222C6BF10043220B /* hourglass_2_1_t.mlmodel */; };
+		8FAE5054222C6BF10043220B /* hourglass_2_1_ds_t.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE5052222C6BF10043220B /* hourglass_2_1_ds_t.mlmodel */; platformFilter = maccatalyst; };
+		8FAE5055222C6BF10043220B /* hourglass_2_1_ds_t.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE5052222C6BF10043220B /* hourglass_2_1_ds_t.mlmodel */; platformFilter = maccatalyst; };
+		8FAE5056222C6BF10043220B /* hourglass_2_1_t.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE5053222C6BF10043220B /* hourglass_2_1_t.mlmodel */; platformFilter = maccatalyst; };
+		8FAE5057222C6BF10043220B /* hourglass_2_1_t.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE5053222C6BF10043220B /* hourglass_2_1_t.mlmodel */; platformFilter = maccatalyst; };
 		8FAE505A2238881E0043220B /* VROAVCaptureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE50582238881D0043220B /* VROAVCaptureController.cpp */; };
 		8FAE505B2238881E0043220B /* VROAVCaptureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE50582238881D0043220B /* VROAVCaptureController.cpp */; };
 		8FAE505C2238881E0043220B /* VROAVCaptureController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAE50592238881D0043220B /* VROAVCaptureController.h */; };
@@ -1122,7 +1122,7 @@
 		8FC542842295D98700D2AFBB /* VROBodyMesheriOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC542822295D98700D2AFBB /* VROBodyMesheriOS.h */; };
 		8FC542872296144F00D2AFBB /* VROVisionEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FC542852296144F00D2AFBB /* VROVisionEngine.cpp */; };
 		8FC542882296144F00D2AFBB /* VROVisionEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC542862296144F00D2AFBB /* VROVisionEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8FC5428B2297297300D2AFBB /* bodymesh.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5428A2297297300D2AFBB /* bodymesh.mlmodel */; };
+		8FC5428B2297297300D2AFBB /* bodymesh.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5428A2297297300D2AFBB /* bodymesh.mlmodel */; platformFilter = maccatalyst; };
 		8FC5428D22972E1700D2AFBB /* VROBodyMesher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC5428C22972E0D00D2AFBB /* VROBodyMesher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FC5428E22972E1800D2AFBB /* VROBodyMesher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC5428C22972E0D00D2AFBB /* VROBodyMesher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FC542912297497C00D2AFBB /* VROBodyMesherTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5428F2297497C00D2AFBB /* VROBodyMesherTest.cpp */; };
@@ -1131,16 +1131,16 @@
 		8FC542962297598A00D2AFBB /* cnpy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FC542932297598A00D2AFBB /* cnpy.cpp */; };
 		8FC542972297598A00D2AFBB /* cnpy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC542942297598A00D2AFBB /* cnpy.h */; };
 		8FC542982297598A00D2AFBB /* cnpy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC542942297598A00D2AFBB /* cnpy.h */; };
-		8FC5429F22988EAA00D2AFBB /* vbml_m_uv_mask.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5429B22988EAA00D2AFBB /* vbml_m_uv_mask.npy */; };
-		8FC542A022988EAA00D2AFBB /* vbml_m_uv_mask.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5429B22988EAA00D2AFBB /* vbml_m_uv_mask.npy */; };
-		8FC542A122988EAA00D2AFBB /* vbml_m_texcoords.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5429C22988EAA00D2AFBB /* vbml_m_texcoords.npy */; };
-		8FC542A222988EAA00D2AFBB /* vbml_m_texcoords.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5429C22988EAA00D2AFBB /* vbml_m_texcoords.npy */; };
-		8FC542A522988EAA00D2AFBB /* vbml_m_v_to_vt.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5429E22988EAA00D2AFBB /* vbml_m_v_to_vt.npy */; };
-		8FC542A622988EAA00D2AFBB /* vbml_m_v_to_vt.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5429E22988EAA00D2AFBB /* vbml_m_v_to_vt.npy */; };
+		8FC5429F22988EAA00D2AFBB /* vbml_m_uv_mask.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5429B22988EAA00D2AFBB /* vbml_m_uv_mask.npy */; platformFilter = maccatalyst; };
+		8FC542A022988EAA00D2AFBB /* vbml_m_uv_mask.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5429B22988EAA00D2AFBB /* vbml_m_uv_mask.npy */; platformFilter = maccatalyst; };
+		8FC542A122988EAA00D2AFBB /* vbml_m_texcoords.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5429C22988EAA00D2AFBB /* vbml_m_texcoords.npy */; platformFilter = maccatalyst; };
+		8FC542A222988EAA00D2AFBB /* vbml_m_texcoords.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5429C22988EAA00D2AFBB /* vbml_m_texcoords.npy */; platformFilter = maccatalyst; };
+		8FC542A522988EAA00D2AFBB /* vbml_m_v_to_vt.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5429E22988EAA00D2AFBB /* vbml_m_v_to_vt.npy */; platformFilter = maccatalyst; };
+		8FC542A622988EAA00D2AFBB /* vbml_m_v_to_vt.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5429E22988EAA00D2AFBB /* vbml_m_v_to_vt.npy */; platformFilter = maccatalyst; };
 		8FC542A8229DD3DB00D2AFBB /* test_uv.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC542A7229DD3DA00D2AFBB /* test_uv.npy */; };
 		8FC542A9229DD3DB00D2AFBB /* test_uv.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC542A7229DD3DA00D2AFBB /* test_uv.npy */; };
-		8FC542AB229DE12F00D2AFBB /* vbml_m_face_to_v.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC542AA229DE12E00D2AFBB /* vbml_m_face_to_v.npy */; };
-		8FC542AC229DE12F00D2AFBB /* vbml_m_face_to_v.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC542AA229DE12E00D2AFBB /* vbml_m_face_to_v.npy */; };
+		8FC542AB229DE12F00D2AFBB /* vbml_m_face_to_v.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC542AA229DE12E00D2AFBB /* vbml_m_face_to_v.npy */; platformFilter = maccatalyst; };
+		8FC542AC229DE12F00D2AFBB /* vbml_m_face_to_v.npy in Resources */ = {isa = PBXBuildFile; fileRef = 8FC542AA229DE12E00D2AFBB /* vbml_m_face_to_v.npy */; platformFilter = maccatalyst; };
 		8FC6E1C51CEB62E9008EFD5F /* lighting_general_functions_fsh.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8FC6E1BE1CEB62E9008EFD5F /* lighting_general_functions_fsh.glsl */; };
 		8FC6E1C61CEBB31C008EFD5F /* lighting_general_functions_fsh.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8FC6E1BE1CEB62E9008EFD5F /* lighting_general_functions_fsh.glsl */; };
 		8FC6E1D91CECB376008EFD5F /* constant_fsh.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8FC6E1CF1CECB364008EFD5F /* constant_fsh.glsl */; };
@@ -1539,6 +1539,20 @@
 		A5EC65B71EBFF5A100FE220E /* VROPhysicsBody.h in Headers */ = {isa = PBXBuildFile; fileRef = A5EC65B41EBFF42100FE220E /* VROPhysicsBody.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5EC65B81EC004E100FE220E /* VROPhysicsShape.h in Headers */ = {isa = PBXBuildFile; fileRef = A5EC65941EBD16F000FE220E /* VROPhysicsShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		183F54962460501F00D07FAC /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = file.mlmodel;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# coremlc\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		8F129FA81ECF323300341D83 /* PBXContainerItemProxy */ = {
@@ -3248,7 +3262,6 @@
 		8FAE18BB1EE79C5B0021C7BB /* ARKit */ = {
 			isa = PBXGroup;
 			children = (
-				8FAE18C21EE79D470021C7BB /* VROARSessioniOS.h */,
 				8FAE18C11EE79D470021C7BB /* VROARSessioniOS.cpp */,
 				8FAE18C61EE79D6D0021C7BB /* VROARFrameiOS.h */,
 				8FAE18C51EE79D6D0021C7BB /* VROARFrameiOS.cpp */,
@@ -3403,6 +3416,7 @@
 				8B08B42D213F7B9A00196F05 /* VROBodyTrackeriOS.h */,
 				8B08B42E213F7B9A00196F05 /* VROBodyTrackeriOS.cpp */,
 				8FC542822295D98700D2AFBB /* VROBodyMesheriOS.h */,
+				8FAE18C21EE79D470021C7BB /* VROARSessioniOS.h */,
 				8FC542812295D98700D2AFBB /* VROBodyMesheriOS.cpp */,
 				8F2C7B1521EF91F300B8A154 /* VROBodyTrackerYolo.h */,
 				8F2C7B1421EF91F300B8A154 /* VROBodyTrackerYolo.cpp */,
@@ -4664,6 +4678,7 @@
 				E82CFD5E20AECB790091154F /* Lipo Framework and Copy to Bridge (build intermediates for Jenkins) */,
 			);
 			buildRules = (
+				183F54962460501F00D07FAC /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -5760,7 +5775,11 @@
 				INFOPLIST_FILE = ViroKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
 					"$(inherited)",
@@ -5848,7 +5867,11 @@
 				INFOPLIST_FILE = ViroKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries/harfbuzz/armv7_arm64",
@@ -6043,7 +6066,10 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ViroSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries/freetype",
@@ -6107,7 +6133,10 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ViroSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries/freetype",
@@ -6165,6 +6194,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				COREML_CODEGEN_LANGUAGE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -6188,7 +6218,11 @@
 				INFOPLIST_FILE = ViroKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
 					"$(inherited)",
@@ -6259,6 +6293,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				COREML_CODEGEN_LANGUAGE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BC32QNM6AD;
@@ -6281,7 +6316,11 @@
 				INFOPLIST_FILE = ViroKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries/harfbuzz/armv7_arm64",

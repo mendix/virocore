@@ -145,7 +145,7 @@ add_library( # Sets the name of the library.
              ${VIRO_RENDERER_SRC}/VROHDRLoader.cpp
              ${VIRO_RENDERER_SRC}/VROAnimatedTextureOpenGL.cpp
              ${VIRO_RENDERER_SRC}/tiny_obj_loader.cc
-             ${VIRO_RENDERER_SRC}/VROGVRUtil.cpp
+#             ${VIRO_RENDERER_SRC}/VROGVRUtil.cpp
              ${VIRO_RENDERER_SRC}/VROThreadRestricted.cpp
              ${VIRO_RENDERER_SRC}/VROCompress.cpp
              ${VIRO_RENDERER_SRC}/VRORenderUtil.cpp
@@ -306,8 +306,8 @@ add_library( # Sets the name of the library.
              ${VIRO_RENDERER_SRC}/giflib/gif_hash.c
 
              # GVR Audio
-             ${VIRO_RENDERER_SRC}/VROSoundGVR.cpp
-             ${VIRO_RENDERER_SRC}/VROSoundDataGVR.cpp
+#             ${VIRO_RENDERER_SRC}/VROSoundGVR.cpp
+#             ${VIRO_RENDERER_SRC}/VROSoundDataGVR.cpp
 
              # Physics
              ${VIRO_RENDERER_SRC}/VROPhysicsWorld.cpp

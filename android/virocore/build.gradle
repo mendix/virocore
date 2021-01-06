@@ -72,7 +72,9 @@ android {
     packagingOptions {
         // x86 is currently not supported, so do not copy over these resources
         exclude '**/x86/**'
-        pickFirst ""
+        // No the most safe way; but time wise efficient. Can lead to amazing results; but most likely
+        // we are safe as long as all libraries are on the same version..
+        pickFirst '**/*.so'
     }
 
 }

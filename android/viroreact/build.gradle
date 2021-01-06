@@ -67,16 +67,19 @@ android {
         // viro_renderer and viro_arcore, but we also have to stop gradle from copying all of our
         // arm64-v8a and x86 dependencies. We do that through these packaging options.
         exclude '**/x86/**'
+        // No the most safe way; but time wise efficient. Can lead to amazing results; but most likely
+        // we are safe as long as all libraries are on the same version..
+        pickFirst '**/*.so'
     }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.0.0'
-    implementation 'com.google.android.exoplayer:exoplayer:2.7.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.3'
     implementation project(':libs:gvr')
     implementation project(':libs:arcore')
-    implementation 'com.google.protobuf.nano:protobuf-javanano:3.0.0-alpha-7'
+    implementation 'com.google.protobuf.nano:protobuf-javanano:3.1.0'
 }
 
 task copyReleaseAAR(type: Copy) {

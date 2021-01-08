@@ -27,14 +27,13 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
 
-import com.viro.core.Material;
-import com.viro.core.Node;
-import com.viro.core.ParticleEmitter;
-import com.viro.core.Quad;
-import com.viro.core.Surface;
-import com.viro.core.Texture;
-import com.viro.core.Vector;
-import com.viro.core.ViroContext;
+import com.mendix.viro.core.Material;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.ParticleEmitter;
+import com.mendix.viro.core.Quad;
+import com.mendix.viro.core.Texture;
+import com.mendix.viro.core.Vector;
+import com.mendix.viro.core.ViroContext;
 import org.junit.Test;
 
 import java.util.Arrays;

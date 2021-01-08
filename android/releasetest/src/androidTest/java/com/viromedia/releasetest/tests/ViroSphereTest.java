@@ -27,14 +27,14 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.util.Log;
 
-import com.viro.core.AmbientLight;
-import com.viro.core.Material;
-import com.viro.core.Node;
-import com.viro.core.Sphere;
-import com.viro.core.Texture;
-import com.viro.core.Vector;
-import com.viro.core.ClickListener;
-import com.viro.core.ClickState;
+import com.mendix.viro.core.AmbientLight;
+import com.mendix.viro.core.Material;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.Sphere;
+import com.mendix.viro.core.Texture;
+import com.mendix.viro.core.Vector;
+import com.mendix.viro.core.ClickListener;
+import com.mendix.viro.core.ClickState;
 
 import org.junit.Test;
 

@@ -25,18 +25,17 @@ package com.viromedia.releasetest.tests;
 
 import android.graphics.Color;
 import android.graphics.Point;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.viro.core.ARHitTestListener;
-import com.viro.core.ARHitTestResult;
-import com.viro.core.AmbientLight;
-import com.viro.core.Material;
-import com.viro.core.Node;
-import com.viro.core.Sphere;
-import com.viro.core.Vector;
-import com.viro.core.ViroViewARCore;
+import com.mendix.viro.core.ARHitTestListener;
+import com.mendix.viro.core.ARHitTestResult;
+import com.mendix.viro.core.AmbientLight;
+import com.mendix.viro.core.Material;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.Sphere;
+import com.mendix.viro.core.Vector;
+import com.mendix.viro.core.ViroViewARCore;
 
 import org.junit.Test;
 

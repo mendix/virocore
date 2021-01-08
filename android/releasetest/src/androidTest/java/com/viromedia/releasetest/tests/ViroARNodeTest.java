@@ -27,19 +27,19 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.util.Log;
 
-import com.viro.core.ARAnchor;
-import com.viro.core.ARNode;
-import com.viro.core.ARPlaneAnchor;
-import com.viro.core.ARScene;
-import com.viro.core.AmbientLight;
-import com.viro.core.Box;
-import com.viro.core.Material;
-import com.viro.core.Node;
+import com.mendix.viro.core.ARAnchor;
+import com.mendix.viro.core.ARNode;
+import com.mendix.viro.core.ARPlaneAnchor;
+import com.mendix.viro.core.ARScene;
+import com.mendix.viro.core.AmbientLight;
+import com.mendix.viro.core.Box;
+import com.mendix.viro.core.Material;
+import com.mendix.viro.core.Node;
 
-import com.viro.core.Surface;
-import com.viro.core.Text;
-import com.viro.core.Texture;
-import com.viro.core.Vector;
+import com.mendix.viro.core.Surface;
+import com.mendix.viro.core.Text;
+import com.mendix.viro.core.Texture;
+import com.mendix.viro.core.Vector;
 
 import org.junit.Test;
 

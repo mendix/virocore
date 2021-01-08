@@ -18,7 +18,7 @@
         <uses-library android:name="android.support.test.runner"
                       android:required="false"/>
         <activity
-            android:name="com.viro.nativetest.ViroNativeActivity"
+            android:name="com.mendix.viro.nativetest.ViroNativeActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|uiMode"
             android:enableVrMode="false">
 

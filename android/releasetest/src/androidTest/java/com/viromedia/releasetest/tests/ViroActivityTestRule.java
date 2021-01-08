@@ -27,7 +27,7 @@ import android.app.Activity;
 import androidx.test.rule.ActivityTestRule;
 import android.util.Log;
 
-import com.viro.core.ViroView;
+import com.mendix.viro.core.ViroView;
 import com.viromedia.releasetest.ViroReleaseTestActivity;
 
 /**

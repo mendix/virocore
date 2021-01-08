@@ -28,16 +28,14 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.net.Uri;
 
-import com.viro.core.Box;
-import com.viro.core.Camera;
-import com.viro.core.DirectionalLight;
-import com.viro.core.Geometry;
-import com.viro.core.Material;
-import com.viro.core.Node;
-import com.viro.core.OmniLight;
-import com.viro.core.Sphere;
-import com.viro.core.Texture;
-import com.viro.core.Vector;
+import com.mendix.viro.core.Camera;
+import com.mendix.viro.core.Geometry;
+import com.mendix.viro.core.Material;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.OmniLight;
+import com.mendix.viro.core.Sphere;
+import com.mendix.viro.core.Texture;
+import com.mendix.viro.core.Vector;
 
 import org.junit.Test;
 

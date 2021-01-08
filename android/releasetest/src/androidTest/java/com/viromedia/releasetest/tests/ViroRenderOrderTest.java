@@ -27,16 +27,16 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
 
-import com.viro.core.AmbientLight;
-import com.viro.core.AsyncObject3DListener;
-import com.viro.core.Box;
-import com.viro.core.Material;
-import com.viro.core.Node;
-import com.viro.core.Object3D;
-import com.viro.core.Spotlight;
-import com.viro.core.Surface;
-import com.viro.core.Texture;
-import com.viro.core.Vector;
+import com.mendix.viro.core.AmbientLight;
+import com.mendix.viro.core.AsyncObject3DListener;
+import com.mendix.viro.core.Box;
+import com.mendix.viro.core.Material;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.Object3D;
+import com.mendix.viro.core.Spotlight;
+import com.mendix.viro.core.Surface;
+import com.mendix.viro.core.Texture;
+import com.mendix.viro.core.Vector;
 
 import org.junit.Test;
 

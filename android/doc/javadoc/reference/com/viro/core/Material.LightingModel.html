@@ -191,7 +191,7 @@ href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
         <ul class="dac-reference-nav-list" data-reference-namespaces>
           
     <li class="selected api apilevel-">
-  <a href="../../../../reference/com/viro/core/package-summary.html">com.viro.core</a></li>
+  <a href="../../../../reference/com/viro/core/package-summary.html">com.mendix.viro.core</a></li>
         </ul>
 
         
@@ -629,7 +629,7 @@ href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
     
       <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
     
-    <td colspan="2" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Enum.html">java.lang.Enum</a>&lt;<a href="../../../../reference/com/viro/core/Material.LightingModel.html">com.viro.core.Material.LightingModel</a>&gt;
+    <td colspan="2" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Enum.html">java.lang.Enum</a>&lt;<a href="../../../../reference/com/viro/core/Material.LightingModel.html">com.mendix.viro.core.Material.LightingModel</a>&gt;
     </td>
   </tr>
   
@@ -640,7 +640,7 @@ href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
     
       <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
     
-    <td colspan="1" class="jd-inheritance-class-cell">com.viro.core.Material.LightingModel
+    <td colspan="1" class="jd-inheritance-class-cell">com.mendix.viro.core.Material.LightingModel
     </td>
   </tr>
   
@@ -992,31 +992,31 @@ href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
  PBR relies on the following properties when rendering:
  <p>
  <ul><li> The diffuse or <i>albedo</i> texture defines the base color of the material.
- This can be set by <code><a href="../../../../reference/com/viro/core/Material.html#setDiffuseTexture(com.viro.core.Texture)">setDiffuseTexture(Texture)</a></code></li> <li>The metalness value or
+ This can be set by <code><a href="../../../../reference/com/viro/core/Material.html#setDiffuseTexture(com.mendix.viro.core.Texture)">setDiffuseTexture(Texture)</a></code></li> <li>The metalness value or
  texture defines how "metallic" the surface is, which influences the degree to which light
  refracts and reflects off the surface, the sharpness of the reflections, and more. This
- can be set by <code><a href="../../../../reference/com/viro/core/Material.html#setMetalnessMap(com.viro.core.Texture)">setMetalnessMap(Texture)</a></code>, or, if a uniform value is preferred,
+ can be set by <code><a href="../../../../reference/com/viro/core/Material.html#setMetalnessMap(com.mendix.viro.core.Texture)">setMetalnessMap(Texture)</a></code>, or, if a uniform value is preferred,
  <code><a href="../../../../reference/com/viro/core/Material.html#setMetalness(float)">setMetalness(float)</a></code>.</li> <li>The roughness value or texture defines the
  roughness of the microfacets on the surface. The rougher a surface is, the more light
  will scatter along completely different directions, resulting in larger and more muted
  specular reflections. Smoother surfaces, meanwhile, exhibit a sharper specular reflection
  as light rays are more likely to reflect in a uniform direction. Roughness can be set by
- <code><a href="../../../../reference/com/viro/core/Material.html#setRoughnessMap(com.viro.core.Texture)">setRoughnessMap(Texture)</a></code>, or, if a uniform value is preferred, <code><a href="../../../../reference/com/viro/core/Material.html#setRoughness(float)">setRoughness(float)</a></code> </li> <li>The ambient occlusion value or texture approximates how
+ <code><a href="../../../../reference/com/viro/core/Material.html#setRoughnessMap(com.mendix.viro.core.Texture)">setRoughnessMap(Texture)</a></code>, or, if a uniform value is preferred, <code><a href="../../../../reference/com/viro/core/Material.html#setRoughness(float)">setRoughness(float)</a></code> </li> <li>The ambient occlusion value or texture approximates how
  exposed the surface is to ambient lighting. This has no effect on direct lights (it does
  not result in clear shadows) but it darkens enclosed and sheltered areas. These textures
  are typically authored using modeling tools along with roughness and metalness. Ambient
- occlusion can be set by <code><a href="../../../../reference/com/viro/core/Material.html#setAmbientOcclusionMap(com.viro.core.Texture)">setAmbientOcclusionMap(Texture)</a></code>.</li> <li>The lighting
+ occlusion can be set by <code><a href="../../../../reference/com/viro/core/Material.html#setAmbientOcclusionMap(com.mendix.viro.core.Texture)">setAmbientOcclusionMap(Texture)</a></code>.</li> <li>The lighting
  environment is a <code><a href="../../../../reference/com/viro/core/Texture.html">Texture</a></code> (typically an HDR equirectangular image) that acts as a
  global light source, illuminating surfaces with diffuse and specular ambient light. We
  treat each pixel in the lighting environment as a light emitter, thereby capturing the
  environment's global lighting and general feel. This gives objects a sense of belonging
  to their environment. For this reason it is common to use the scene's background texture
  as the lighting environment, but this is not necessary. To set the lighting environment
- use <code><a href="../../../../reference/com/viro/core/Scene.html#setLightingEnvironment(com.viro.core.Texture)">setLightingEnvironment(Texture)</a></code>. </li> </ul>
+ use <code><a href="../../../../reference/com/viro/core/Scene.html#setLightingEnvironment(com.mendix.viro.core.Texture)">setLightingEnvironment(Texture)</a></code>. </li> </ul>
  <p>
  PBR rendering also takes into account normal maps to add more surface detail. However,
  PBR will <i>ignore</i> some properties used by the basic lighting models. Specifically,
- the specular texture (<code><a href="../../../../reference/com/viro/core/Material.html#setSpecularTexture(com.viro.core.Texture)">setSpecularTexture(Texture)</a></code>) and the shininess property
+ the specular texture (<code><a href="../../../../reference/com/viro/core/Material.html#setSpecularTexture(com.mendix.viro.core.Texture)">setSpecularTexture(Texture)</a></code>) and the shininess property
  (<code><a href="../../../../reference/com/viro/core/Material.html#setShininess(float)">setShininess(float)</a></code>) are ignored when rendering physically-based surfaces.
 </p></p>
 

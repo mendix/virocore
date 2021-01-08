@@ -26,11 +26,11 @@ package com.viromedia.releasetest.tests;
 import android.graphics.Color;
 import androidx.test.espresso.core.deps.guava.collect.Iterables;
 
-import com.viro.core.AmbientLight;
-import com.viro.core.Material;
-import com.viro.core.Node;
-import com.viro.core.Text;
-import com.viro.core.Vector;
+import com.mendix.viro.core.AmbientLight;
+import com.mendix.viro.core.Material;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.Text;
+import com.mendix.viro.core.Vector;
 
 import org.junit.Test;
 

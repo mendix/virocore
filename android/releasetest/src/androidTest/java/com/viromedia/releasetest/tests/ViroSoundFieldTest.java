@@ -27,11 +27,11 @@ import android.graphics.Color;
 import android.net.Uri;
 import androidx.test.espresso.core.deps.guava.collect.Iterables;
 
-import com.viro.core.Node;
-import com.viro.core.SoundField;
-import com.viro.core.Text;
-import com.viro.core.Vector;
-import com.viro.core.ViroContext;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.SoundField;
+import com.mendix.viro.core.Text;
+import com.mendix.viro.core.Vector;
+import com.mendix.viro.core.ViroContext;
 
 import org.junit.Test;
 

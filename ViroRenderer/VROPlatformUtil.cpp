@@ -93,7 +93,7 @@ NSURLSessionDataTask *downloadDataWithURLSynchronous(NSURL *url,
                                                      void (^completionBlock)(NSData *data, NSError *error));
 
 std::string VROPlatformGetPathForResource(std::string resource, std::string type) {
-    NSBundle *bundle = [NSBundle bundleWithIdentifier:@"com.viro.ViroKit"];
+    NSBundle *bundle = [NSBundle bundleWithIdentifier:@"com.mendix.viro.ViroKit"];
     NSString *path = [bundle pathForResource:[NSString stringWithUTF8String:resource.c_str()]
                                       ofType:[NSString stringWithUTF8String:type.c_str()]];
     
@@ -340,7 +340,7 @@ void VROPlatformSetOpenGLContext(NSOpenGLContext *context, VROViewScene *scene) 
     if (!_context) {
         _context = new VRORenderingThreadContext();
         _context->openGLContext = context;
-        _context->backgroundQueue = dispatch_queue_create("com.viro.background", DISPATCH_QUEUE_CONCURRENT);
+        _context->backgroundQueue = dispatch_queue_create("com.mendix.viro.background", DISPATCH_QUEUE_CONCURRENT);
         _context->view = scene;
         
         dispatch_queue_set_specific(_context->backgroundQueue, sRenderingContextKey, _context, nullptr);

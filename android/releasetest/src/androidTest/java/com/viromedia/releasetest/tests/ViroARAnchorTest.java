@@ -27,30 +27,23 @@ import android.graphics.Color;
 import android.graphics.Point;
 import android.net.Uri;
 import android.util.Log;
-import android.view.MotionEvent;
-import android.view.View;
 
-import com.viro.core.ARAnchor;
-import com.viro.core.ARHitTestListener;
-import com.viro.core.ARHitTestResult;
-import com.viro.core.ARNode;
-import com.viro.core.ARScene;
-import com.viro.core.AmbientLight;
-import com.viro.core.Animation;
-import com.viro.core.AsyncObject3DListener;
-import com.viro.core.DirectionalLight;
-import com.viro.core.Material;
-import com.viro.core.Node;
-import com.viro.core.Object3D;
-import com.viro.core.Quaternion;
-import com.viro.core.Sphere;
-import com.viro.core.Vector;
-import com.viro.core.ViroViewARCore;
+import com.mendix.viro.core.ARAnchor;
+import com.mendix.viro.core.ARHitTestListener;
+import com.mendix.viro.core.ARHitTestResult;
+import com.mendix.viro.core.ARNode;
+import com.mendix.viro.core.ARScene;
+import com.mendix.viro.core.AmbientLight;
+import com.mendix.viro.core.AsyncObject3DListener;
+import com.mendix.viro.core.DirectionalLight;
+import com.mendix.viro.core.Object3D;
+import com.mendix.viro.core.Quaternion;
+import com.mendix.viro.core.Vector;
+import com.mendix.viro.core.ViroViewARCore;
 
 import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**

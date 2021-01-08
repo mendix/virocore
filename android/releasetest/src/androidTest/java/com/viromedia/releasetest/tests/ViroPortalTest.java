@@ -28,17 +28,17 @@ import android.graphics.Color;
 import android.net.Uri;
 import androidx.test.espresso.core.deps.guava.collect.Iterables;
 
-import com.viro.core.AmbientLight;
-import com.viro.core.Camera;
-import com.viro.core.Node;
-import com.viro.core.Object3D;
-import com.viro.core.Portal;
-import com.viro.core.PortalScene;
-import com.viro.core.Renderer;
-import com.viro.core.Text;
-import com.viro.core.Texture;
-import com.viro.core.Vector;
-import com.viro.core.VideoTexture;
+import com.mendix.viro.core.AmbientLight;
+import com.mendix.viro.core.Camera;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.Object3D;
+import com.mendix.viro.core.Portal;
+import com.mendix.viro.core.PortalScene;
+import com.mendix.viro.core.Renderer;
+import com.mendix.viro.core.Text;
+import com.mendix.viro.core.Texture;
+import com.mendix.viro.core.Vector;
+import com.mendix.viro.core.VideoTexture;
 import com.viromedia.releasetest.ViroReleaseTestActivity;
 
 import org.junit.Test;

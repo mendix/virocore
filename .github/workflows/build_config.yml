@@ -73,5 +73,5 @@ jobs:
       - name: Upload iOS Renderer artifact
         uses: actions/upload-artifact@v2
         with: 
-          name: ios_dist.tgz
+          name: ios_dist
           path: ./ios/dist/build/Products/Release-iphoneos/*

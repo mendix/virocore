@@ -1465,7 +1465,7 @@ std::map<std::string, std::string> VROPlatformConvertFromJavaMap(VRO_OBJECT java
 
 #endif
 #pragma mark - iOS and Android
-#if VRO_PLATFORM_IOS || VRO_PLATFORM_ANDROID
+#if VRO_PLATFORM_ANDROID
 
 #include "VROStringUtil.h"
 #include "vr/gvr/capi/include/gvr_audio.h"

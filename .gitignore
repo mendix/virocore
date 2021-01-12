@@ -120,3 +120,5 @@ android/fastlane/README.md
 ios/fastlane/report.xml
 ios/fastlane/README.md
 
+# VSCode
+.vscode/settings.json

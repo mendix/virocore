@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -246,16 +246,11 @@
 		13B672FF212229B20040FB72 /* VROParticleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FD2A5341F813C4000E831A6 /* VROParticleTest.cpp */; };
 		13B67300212229B20040FB72 /* VROARNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A4590FA1F97BF4D00D3811A /* VROARNode.cpp */; };
 		13B67301212229B20040FB72 /* VROShapeUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F152A791C10D4AE00A211F8 /* VROShapeUtils.cpp */; };
-		13B67303212229B20040FB72 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F951F9220583790000DC58F /* libfreetype.a */; };
 		13B67304212229B20040FB72 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFA8A222057903700C4D99B /* libbz2.tbd */; };
 		13B67305212229B20040FB72 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A99E6C41EF1B7B300712D79 /* ARKit.framework */; };
 		13B67306212229B20040FB72 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF39AB51F2295F700229AC0 /* Photos.framework */; };
 		13B67307212229B20040FB72 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A07C1891ED8D8DA00757C29 /* AssetsLibrary.framework */; };
 		13B67308212229B20040FB72 /* libprotobuf-lite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB535201EB85AD200E8E1A6 /* libprotobuf-lite.a */; };
-		13B67309212229B20040FB72 /* libBulletCollision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EC65821EB3ECE200FE220E /* libBulletCollision.a */; };
-		13B6730A212229B20040FB72 /* libBulletDynamics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EC65831EB3ECE200FE220E /* libBulletDynamics.a */; };
-		13B6730B212229B20040FB72 /* libBulletSoftBody.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EC65841EB3ECE200FE220E /* libBulletSoftBody.a */; };
-		13B6730C212229B20040FB72 /* libLinearMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EC65851EB3ECE200FE220E /* libLinearMath.a */; };
 		13B6730D212229B20040FB72 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1664A51E5E43260062EBCE /* Accelerate.framework */; };
 		13B6730E212229B20040FB72 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDDE2111CD00F2600674DE2 /* CoreText.framework */; };
 		13B6731A212229B20040FB72 /* VROPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = A5B4AF0720535CDA0006D970 /* VROPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -995,7 +990,6 @@
 		8F9278031C66BD4500FF892A /* pz1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F9277FD1C66BD4500FF892A /* pz1.jpg */; };
 		8F9278071C670FC100FF892A /* VROTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F9278041C670B0300FF892A /* VROTriangle.cpp */; };
 		8F9278081C670FD900FF892A /* VROTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9278051C670B0300FF892A /* VROTriangle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F951F9320583790000DC58F /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F951F9220583790000DC58F /* libfreetype.a */; };
 		8F951F9D20587D6E000DC58F /* VROTypeface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F951F9C20587D6E000DC58F /* VROTypeface.cpp */; };
 		8F98F70B21260E4800917430 /* VROLayeredSkeletalAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F98F70821260E4700917430 /* VROLayeredSkeletalAnimation.cpp */; };
 		8F98F70C21260E4800917430 /* VROLayeredSkeletalAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F98F70821260E4700917430 /* VROLayeredSkeletalAnimation.cpp */; };
@@ -1528,16 +1522,31 @@
 		A5DD985E21C4E5D400395CA0 /* VROBodyTrackerController.h in Headers */ = {isa = PBXBuildFile; fileRef = A5DD985B21C4E5D400395CA0 /* VROBodyTrackerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5DD986021C4E5D400395CA0 /* VROBodyTrackerController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5DD985C21C4E5D400395CA0 /* VROBodyTrackerController.cpp */; };
 		A5DD986121C4E5D400395CA0 /* VROBodyTrackerController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5DD985C21C4E5D400395CA0 /* VROBodyTrackerController.cpp */; };
-		A5EC65861EB3ECE200FE220E /* libBulletCollision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EC65821EB3ECE200FE220E /* libBulletCollision.a */; };
-		A5EC65871EB3ECE200FE220E /* libBulletDynamics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EC65831EB3ECE200FE220E /* libBulletDynamics.a */; };
-		A5EC65881EB3ECE200FE220E /* libBulletSoftBody.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EC65841EB3ECE200FE220E /* libBulletSoftBody.a */; };
-		A5EC65891EB3ECE200FE220E /* libLinearMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EC65851EB3ECE200FE220E /* libLinearMath.a */; };
 		A5EC659C1EBD34C000FE220E /* VROPhysicsShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5EC65931EBD16F000FE220E /* VROPhysicsShape.cpp */; };
 		A5EC659E1EBD34C000FE220E /* VROPhysicsWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5EC65951EBD16F000FE220E /* VROPhysicsWorld.cpp */; };
 		A5EC659F1EBD34C000FE220E /* VROPhysicsWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = A5EC65961EBD16F000FE220E /* VROPhysicsWorld.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5EC65B61EBFF57B00FE220E /* VROPhysicsBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5EC65B31EBFF42100FE220E /* VROPhysicsBody.cpp */; };
 		A5EC65B71EBFF5A100FE220E /* VROPhysicsBody.h in Headers */ = {isa = PBXBuildFile; fileRef = A5EC65B41EBFF42100FE220E /* VROPhysicsBody.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5EC65B81EC004E100FE220E /* VROPhysicsShape.h in Headers */ = {isa = PBXBuildFile; fileRef = A5EC65941EBD16F000FE220E /* VROPhysicsShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF00EA5A25AF6DD9009D0A68 /* FreeType.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA5525AF6DD5009D0A68 /* FreeType.xcframework */; };
+		DF00EA5B25AF6DD9009D0A68 /* FreeType.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA5525AF6DD5009D0A68 /* FreeType.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF00EA7225AF76B2009D0A68 /* FreeType.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA5525AF6DD5009D0A68 /* FreeType.xcframework */; };
+		DF00EA7325AF76B2009D0A68 /* FreeType.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA5525AF6DD5009D0A68 /* FreeType.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF00EA8625AF7C38009D0A68 /* BulletDynamics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7625AF7B61009D0A68 /* BulletDynamics.xcframework */; };
+		DF00EA8725AF7C38009D0A68 /* BulletDynamics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7625AF7B61009D0A68 /* BulletDynamics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF00EA8825AF7C39009D0A68 /* BulletSoftBody.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7525AF7B61009D0A68 /* BulletSoftBody.xcframework */; };
+		DF00EA8925AF7C39009D0A68 /* BulletSoftBody.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7525AF7B61009D0A68 /* BulletSoftBody.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF00EA8A25AF7C3B009D0A68 /* LinearMath.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7425AF7B61009D0A68 /* LinearMath.xcframework */; };
+		DF00EA8B25AF7C3B009D0A68 /* LinearMath.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7425AF7B61009D0A68 /* LinearMath.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF00EA8E25AF7C47009D0A68 /* BulletDynamics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7625AF7B61009D0A68 /* BulletDynamics.xcframework */; };
+		DF00EA8F25AF7C47009D0A68 /* BulletDynamics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7625AF7B61009D0A68 /* BulletDynamics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF00EA9025AF7C49009D0A68 /* BulletSoftBody.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7525AF7B61009D0A68 /* BulletSoftBody.xcframework */; };
+		DF00EA9125AF7C49009D0A68 /* BulletSoftBody.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7525AF7B61009D0A68 /* BulletSoftBody.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF00EA9225AF7C4C009D0A68 /* LinearMath.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7425AF7B61009D0A68 /* LinearMath.xcframework */; };
+		DF00EA9325AF7C4C009D0A68 /* LinearMath.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7425AF7B61009D0A68 /* LinearMath.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF00EAA425AF7E50009D0A68 /* BulletCollision.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7725AF7B61009D0A68 /* BulletCollision.xcframework */; };
+		DF00EAA525AF7E5D009D0A68 /* BulletCollision.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7725AF7B61009D0A68 /* BulletCollision.xcframework */; };
+		DF00EAA625AF7E5D009D0A68 /* BulletCollision.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF00EA7725AF7B61009D0A68 /* BulletCollision.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1580,6 +1589,35 @@
 			dstSubfolderSpec = 10;
 			files = (
 				8F129FA71ECF323300341D83 /* ViroKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF00EA5325AF6CD1009D0A68 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DF00EA9325AF7C4C009D0A68 /* LinearMath.xcframework in Embed Frameworks */,
+				DF00EA8F25AF7C47009D0A68 /* BulletDynamics.xcframework in Embed Frameworks */,
+				DF00EA5B25AF6DD9009D0A68 /* FreeType.xcframework in Embed Frameworks */,
+				DF00EA9125AF7C49009D0A68 /* BulletSoftBody.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF00EA6C25AF76A7009D0A68 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DF00EA8B25AF7C3B009D0A68 /* LinearMath.xcframework in Embed Frameworks */,
+				DF00EA8725AF7C38009D0A68 /* BulletDynamics.xcframework in Embed Frameworks */,
+				DF00EA7325AF76B2009D0A68 /* FreeType.xcframework in Embed Frameworks */,
+				DF00EA8925AF7C39009D0A68 /* BulletSoftBody.xcframework in Embed Frameworks */,
+				DF00EAA625AF7E5D009D0A68 /* BulletCollision.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2076,7 +2114,6 @@
 		8F9277FD1C66BD4500FF892A /* pz1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pz1.jpg; path = ViroSample/pz1.jpg; sourceTree = "<group>"; };
 		8F9278041C670B0300FF892A /* VROTriangle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = VROTriangle.cpp; sourceTree = "<group>"; };
 		8F9278051C670B0300FF892A /* VROTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VROTriangle.h; sourceTree = "<group>"; };
-		8F951F9220583790000DC58F /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = Libraries/freetype/armv7_arm64/libfreetype.a; sourceTree = "<group>"; };
 		8F951F9C20587D6E000DC58F /* VROTypeface.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = VROTypeface.cpp; sourceTree = "<group>"; };
 		8F98F70821260E4700917430 /* VROLayeredSkeletalAnimation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = VROLayeredSkeletalAnimation.cpp; sourceTree = "<group>"; };
 		8F98F70921260E4700917430 /* VROLayeredSkeletalAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VROLayeredSkeletalAnimation.h; sourceTree = "<group>"; };
@@ -2513,10 +2550,6 @@
 		A5DA443621B0BD1600F86923 /* VROIKTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VROIKTest.h; sourceTree = "<group>"; };
 		A5DD985B21C4E5D400395CA0 /* VROBodyTrackerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VROBodyTrackerController.h; sourceTree = "<group>"; };
 		A5DD985C21C4E5D400395CA0 /* VROBodyTrackerController.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = VROBodyTrackerController.cpp; sourceTree = "<group>"; };
-		A5EC65821EB3ECE200FE220E /* libBulletCollision.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletCollision.a; path = Libraries/bullet/libBulletCollision.a; sourceTree = "<group>"; };
-		A5EC65831EB3ECE200FE220E /* libBulletDynamics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletDynamics.a; path = Libraries/bullet/libBulletDynamics.a; sourceTree = "<group>"; };
-		A5EC65841EB3ECE200FE220E /* libBulletSoftBody.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletSoftBody.a; path = Libraries/bullet/libBulletSoftBody.a; sourceTree = "<group>"; };
-		A5EC65851EB3ECE200FE220E /* libLinearMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLinearMath.a; path = Libraries/bullet/libLinearMath.a; sourceTree = "<group>"; };
 		A5EC65931EBD16F000FE220E /* VROPhysicsShape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = VROPhysicsShape.cpp; sourceTree = "<group>"; };
 		A5EC65941EBD16F000FE220E /* VROPhysicsShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VROPhysicsShape.h; sourceTree = "<group>"; };
 		A5EC65951EBD16F000FE220E /* VROPhysicsWorld.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = VROPhysicsWorld.cpp; sourceTree = "<group>"; };
@@ -2526,6 +2559,11 @@
 		CEBF762FF3C83F0069F145FC /* Pods-ViroKit_static_lib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViroKit_static_lib.release.xcconfig"; path = "Target Support Files/Pods-ViroKit_static_lib/Pods-ViroKit_static_lib.release.xcconfig"; sourceTree = "<group>"; };
 		D286EACA6C1FFCE080E53511 /* Pods_ViroKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViroKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6EBB58BE78287C2D63B450 /* Pods-ViroSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViroSample.debug.xcconfig"; path = "Target Support Files/Pods-ViroSample/Pods-ViroSample.debug.xcconfig"; sourceTree = "<group>"; };
+		DF00EA5525AF6DD5009D0A68 /* FreeType.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FreeType.xcframework; path = Libraries/freetype/FreeType.xcframework; sourceTree = "<group>"; };
+		DF00EA7425AF7B61009D0A68 /* LinearMath.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinearMath.xcframework; path = Libraries/bullet/LinearMath.xcframework; sourceTree = "<group>"; };
+		DF00EA7525AF7B61009D0A68 /* BulletSoftBody.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BulletSoftBody.xcframework; path = Libraries/bullet/BulletSoftBody.xcframework; sourceTree = "<group>"; };
+		DF00EA7625AF7B61009D0A68 /* BulletDynamics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BulletDynamics.xcframework; path = Libraries/bullet/BulletDynamics.xcframework; sourceTree = "<group>"; };
+		DF00EA7725AF7B61009D0A68 /* BulletCollision.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BulletCollision.xcframework; path = Libraries/bullet/BulletCollision.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2534,19 +2572,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				130F15EB22DD3C1E009983B3 /* MobileCoreServices.framework in Frameworks */,
+				DF00EA8E25AF7C47009D0A68 /* BulletDynamics.xcframework in Frameworks */,
+				DF00EA9225AF7C4C009D0A68 /* LinearMath.xcframework in Frameworks */,
 				130F15EA22DD3C00009983B3 /* CoreML.framework in Frameworks */,
+				DF00EA9025AF7C49009D0A68 /* BulletSoftBody.xcframework in Frameworks */,
 				130F15E922DD3BF7009983B3 /* Vision.framework in Frameworks */,
-				13B67303212229B20040FB72 /* libfreetype.a in Frameworks */,
+				DF00EAA425AF7E50009D0A68 /* BulletCollision.xcframework in Frameworks */,
 				13B67304212229B20040FB72 /* libbz2.tbd in Frameworks */,
 				13B67305212229B20040FB72 /* ARKit.framework in Frameworks */,
 				13B67306212229B20040FB72 /* Photos.framework in Frameworks */,
 				13B67307212229B20040FB72 /* AssetsLibrary.framework in Frameworks */,
 				13B67308212229B20040FB72 /* libprotobuf-lite.a in Frameworks */,
-				13B67309212229B20040FB72 /* libBulletCollision.a in Frameworks */,
-				13B6730A212229B20040FB72 /* libBulletDynamics.a in Frameworks */,
-				13B6730B212229B20040FB72 /* libBulletSoftBody.a in Frameworks */,
-				13B6730C212229B20040FB72 /* libLinearMath.a in Frameworks */,
 				13B6730D212229B20040FB72 /* Accelerate.framework in Frameworks */,
+				DF00EA5A25AF6DD9009D0A68 /* FreeType.xcframework in Frameworks */,
 				13B6730E212229B20040FB72 /* CoreText.framework in Frameworks */,
 				55EE8FA2030FEBF9DA70D28E /* libPods-ViroKit_static_lib.a in Frameworks */,
 			);
@@ -2567,21 +2605,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ACA1B6C22A8467000611602 /* MobileCoreServices.framework in Frameworks */,
+				DF00EA8625AF7C38009D0A68 /* BulletDynamics.xcframework in Frameworks */,
+				DF00EA8A25AF7C3B009D0A68 /* LinearMath.xcframework in Frameworks */,
 				8B9989032146338400EA9ED3 /* Vision.framework in Frameworks */,
+				DF00EA8825AF7C39009D0A68 /* BulletSoftBody.xcframework in Frameworks */,
 				8B9989002143564600EA9ED3 /* CoreML.framework in Frameworks */,
-				8F951F9320583790000DC58F /* libfreetype.a in Frameworks */,
+				DF00EAA525AF7E5D009D0A68 /* BulletCollision.xcframework in Frameworks */,
 				8FFA8A232057903800C4D99B /* libbz2.tbd in Frameworks */,
 				8A5CDD741F636C300093F43B /* ARKit.framework in Frameworks */,
 				8A9EEC6F1F26BE9700EB2228 /* Photos.framework in Frameworks */,
 				8A35172C1EDE04B500B6E786 /* AssetsLibrary.framework in Frameworks */,
 				8F618E331EB980E70020B33B /* libprotobuf-lite.a in Frameworks */,
-				A5EC65861EB3ECE200FE220E /* libBulletCollision.a in Frameworks */,
-				A5EC65871EB3ECE200FE220E /* libBulletDynamics.a in Frameworks */,
-				A5EC65881EB3ECE200FE220E /* libBulletSoftBody.a in Frameworks */,
-				A5EC65891EB3ECE200FE220E /* libLinearMath.a in Frameworks */,
 				8F1664A61E5E43260062EBCE /* Accelerate.framework in Frameworks */,
 				8FDDE2121CD00F2600674DE2 /* CoreText.framework in Frameworks */,
 				14346A8773B77A07DFE8AB22 /* Pods_ViroKit.framework in Frameworks */,
+				DF00EA7225AF76B2009D0A68 /* FreeType.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3872,6 +3910,11 @@
 		95E5BC90E51A0FC2C3AA4D42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF00EA7725AF7B61009D0A68 /* BulletCollision.xcframework */,
+				DF00EA7625AF7B61009D0A68 /* BulletDynamics.xcframework */,
+				DF00EA7525AF7B61009D0A68 /* BulletSoftBody.xcframework */,
+				DF00EA7425AF7B61009D0A68 /* LinearMath.xcframework */,
+				DF00EA5525AF6DD5009D0A68 /* FreeType.xcframework */,
 				8FFF27CC237518B40090FD9C /* CoreMedia.framework */,
 				8FFF27C9237518B40090FD9C /* CoreVideo.framework */,
 				8FFF27CA237518B40090FD9C /* AVFoundation.framework */,
@@ -3894,13 +3937,8 @@
 				1331B62820C8A03D00D1C5F5 /* libAWSDynamoDB-library.a */,
 				1331B62620C8A03500D1C5F5 /* libAWSCore-library.a */,
 				8F87553520646267002D9BF8 /* harfbuzz.a */,
-				8F951F9220583790000DC58F /* libfreetype.a */,
 				8FFA8A222057903700C4D99B /* libbz2.tbd */,
 				8FB535201EB85AD200E8E1A6 /* libprotobuf-lite.a */,
-				A5EC65821EB3ECE200FE220E /* libBulletCollision.a */,
-				A5EC65831EB3ECE200FE220E /* libBulletDynamics.a */,
-				A5EC65841EB3ECE200FE220E /* libBulletSoftBody.a */,
-				A5EC65851EB3ECE200FE220E /* libLinearMath.a */,
 				48567375A658D093284ACEDD /* libPods-ViroARKit.a */,
 				782820C4A876FF888106C852 /* libPods-ViroKit_static_lib.a */,
 				D286EACA6C1FFCE080E53511 /* Pods_ViroKit.framework */,
@@ -4620,6 +4658,7 @@
 				13B67472212229B20040FB72 /* Copy GLM Files to Framework */,
 				13B67475212229B20040FB72 /* Lipo Framework and Copy to Bridge */,
 				13B67476212229B20040FB72 /* Lipo Framework and Copy to Bridge (build intermediates for Jenkins) */,
+				DF00EA5325AF6CD1009D0A68 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -4662,6 +4701,7 @@
 				8AE44C932021084A00CE8394 /* Copy GLM Files to Framework */,
 				8A8B69DD2036344C00D98723 /* Lipo Framework and Copy to Bridge */,
 				E82CFD5E20AECB790091154F /* Lipo Framework and Copy to Bridge (build intermediates for Jenkins) */,
+				DF00EA6C25AF76A7009D0A68 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -5760,7 +5800,11 @@
 				INFOPLIST_FILE = ViroKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
 					"$(inherited)",
@@ -5848,7 +5892,11 @@
 				INFOPLIST_FILE = ViroKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries/harfbuzz/armv7_arm64",
@@ -6044,7 +6092,10 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ViroSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries/freetype",
@@ -6110,7 +6161,10 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ViroSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries/freetype",
@@ -6192,7 +6246,11 @@
 				INFOPLIST_FILE = ViroKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
 					"$(inherited)",
@@ -6285,7 +6343,11 @@
 				INFOPLIST_FILE = ViroKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries/harfbuzz/armv7_arm64",

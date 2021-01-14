@@ -21,22 +21,21 @@ package com.viromedia.releasetest.tests;
 
 import android.graphics.Color;
 import android.net.Uri;
-import android.support.test.espresso.core.deps.guava.collect.Iterables;
+import androidx.test.espresso.core.deps.guava.collect.Iterables;
 import android.util.Log;
 
-import com.viro.core.AmbientLight;
-import com.viro.core.AnimationTransaction;
-import com.viro.core.DirectionalLight;
-import com.viro.core.Animation;
-import com.viro.core.AsyncObject3DListener;
-import com.viro.core.Material;
-import com.viro.core.Node;
-import com.viro.core.Object3D;
-import com.viro.core.Text;
-import com.viro.core.Vector;
-import com.viro.core.Surface;
-import com.viro.core.AnimationTimingFunction;
-import com.viro.core.AnimationTransaction;
+import com.mendix.viro.core.AmbientLight;
+import com.mendix.viro.core.AnimationTransaction;
+import com.mendix.viro.core.DirectionalLight;
+import com.mendix.viro.core.Animation;
+import com.mendix.viro.core.AsyncObject3DListener;
+import com.mendix.viro.core.Material;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.Object3D;
+import com.mendix.viro.core.Text;
+import com.mendix.viro.core.Vector;
+import com.mendix.viro.core.Surface;
+import com.mendix.viro.core.AnimationTimingFunction;
 
 
 import org.junit.FixMethodOrder;

@@ -26,18 +26,18 @@ package com.viromedia.releasetest;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
-import com.viro.core.RendererCloseListener;
-import com.viro.core.ViroView;
-import com.viro.core.ViroViewARCore;
-import com.viro.core.ViroViewGVR;
-import com.viro.core.ViroViewScene;
+import com.mendix.viro.core.RendererCloseListener;
+import com.mendix.viro.core.ViroView;
+import com.mendix.viro.core.ViroViewARCore;
+import com.mendix.viro.core.ViroViewGVR;
+import com.mendix.viro.core.ViroViewScene;
 
 /**
  * Created by manish on 10/25/17.

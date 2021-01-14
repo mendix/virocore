@@ -4,6 +4,7 @@
 /ios/ViroRenderer.xcworkspace/xcshareddata/**
 /ios/Pods/Pods.xcodeproj/xcuserdata/**
 /ios/Pods/
+/ios/dist/
 .DS_Store
 
 # Macos
@@ -120,3 +121,5 @@ android/fastlane/README.md
 ios/fastlane/report.xml
 ios/fastlane/README.md
 
+# VSCode
+.vscode/settings.json

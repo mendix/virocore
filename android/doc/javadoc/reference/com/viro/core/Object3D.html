@@ -191,7 +191,7 @@ href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
         <ul class="dac-reference-nav-list" data-reference-namespaces>
           
     <li class="selected api apilevel-">
-  <a href="../../../../reference/com/viro/core/package-summary.html">com.viro.core</a></li>
+  <a href="../../../../reference/com/viro/core/package-summary.html">com.mendix.viro.core</a></li>
         </ul>
 
         
@@ -629,7 +629,7 @@ href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
     
       <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
     
-    <td colspan="2" class="jd-inheritance-class-cell"><a href="../../../../reference/com/viro/core/Node.html">com.viro.core.Node</a>
+    <td colspan="2" class="jd-inheritance-class-cell"><a href="../../../../reference/com/viro/core/Node.html">com.mendix.viro.core.Node</a>
     </td>
   </tr>
   
@@ -640,7 +640,7 @@ href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
     
       <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
     
-    <td colspan="1" class="jd-inheritance-class-cell">com.viro.core.Object3D
+    <td colspan="1" class="jd-inheritance-class-cell">com.mendix.viro.core.Object3D
     </td>
   </tr>
   
@@ -658,7 +658,7 @@ href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
  as the parent to the generated subgraph.
  <p>
  OBJ loading supports MTL files, for loading material properties and textures. For OBJ files,
- Materials can also be manually injected by invoking <code><a href="../../../../reference/com/viro/core/Geometry.html#setMaterials(java.util.List<com.viro.core.Material>)">setMaterials(List)</a></code>.
+ Materials can also be manually injected by invoking <code><a href="../../../../reference/com/viro/core/Geometry.html#setMaterials(java.util.List<com.mendix.viro.core.Material>)">setMaterials(List)</a></code>.
  <p>
  FBX loading supports Blinn/Phong material properties, diffuse, specular, and normal maps, skeletal and
  keyframe animation, and PBR material properties (roughness, metalness, ambient occlusion) through
@@ -910,7 +910,7 @@ href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
   
     <td width="100%">
       <code>
-      <a href="../../../../reference/com/viro/core/Object3D.html#loadModel(com.viro.core.ViroContext, android.net.Uri, com.viro.core.Object3D.Type, com.viro.core.AsyncObject3DListener)">loadModel</a>(<a href="../../../../reference/com/viro/core/ViroContext.html">ViroContext</a> viroContext, <a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> uri, <a href="../../../../reference/com/viro/core/Object3D.Type.html">Object3D.Type</a> type, <a href="../../../../reference/com/viro/core/AsyncObject3DListener.html">AsyncObject3DListener</a> asyncListener)
+      <a href="../../../../reference/com/viro/core/Object3D.html#loadModel(com.mendix.viro.core.ViroContext, android.net.Uri, com.mendix.viro.core.Object3D.Type, com.mendix.viro.core.AsyncObject3DListener)">loadModel</a>(<a href="../../../../reference/com/viro/core/ViroContext.html">ViroContext</a> viroContext, <a href="http://d.android.com/reference/android/net/Uri.html">Uri</a> uri, <a href="../../../../reference/com/viro/core/Object3D.Type.html">Object3D.Type</a> type, <a href="../../../../reference/com/viro/core/AsyncObject3DListener.html">AsyncObject3DListener</a> asyncListener)
       </code>
       
         <p>Load the model at the given URI into this Node.
@@ -964,7 +964,7 @@ href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
   
     <td width="100%">
       <code>
-      <a href="../../../../reference/com/viro/core/Object3D.html#setMorphMode(com.viro.core.Object3D.MorphMode)">setMorphMode</a>(<a href="../../../../reference/com/viro/core/Object3D.MorphMode.html">Object3D.MorphMode</a> mode)
+      <a href="../../../../reference/com/viro/core/Object3D.html#setMorphMode(com.mendix.viro.core.Object3D.MorphMode)">setMorphMode</a>(<a href="../../../../reference/com/viro/core/Object3D.MorphMode.html">Object3D.MorphMode</a> mode)
       </code>
       
         <p>Sets the <code><a href="../../../../reference/com/viro/core/Object3D.MorphMode.html">Object3D.MorphMode</a></code> this Object3D will use to render applied morph target weights.
@@ -1078,7 +1078,7 @@ Object3D ()</pre>
 
     
   <p>Construct a new Object3D. To load 3D model data into this Node, use
- <code><a href="../../../../reference/com/viro/core/Object3D.html#loadModel(com.viro.core.ViroContext, android.net.Uri, com.viro.core.Object3D.Type, com.viro.core.AsyncObject3DListener)">loadModel(ViroContext, Uri, Type, AsyncObject3DListener)</a></code>.
+ <code><a href="../../../../reference/com/viro/core/Object3D.html#loadModel(com.mendix.viro.core.ViroContext, android.net.Uri, com.mendix.viro.core.Object3D.Type, com.mendix.viro.core.AsyncObject3DListener)">loadModel(ViroContext, Uri, Type, AsyncObject3DListener)</a></code>.
 </p></p>
 
 </div>
@@ -1139,11 +1139,11 @@ void disposeModel ()</pre>
     
   <p>Remove and dispose the model that was loaded in this Object3D. This will remove and delete
  all the <code><a href="../../../../reference/com/viro/core/Node.html">Node</a></code>, <code><a href="../../../../reference/com/viro/core/Geometry.html">Geometry</a></code>, <code><a href="../../../../reference/com/viro/core/Material.html">Material</a></code>, and <code><a href="../../../../reference/com/viro/core/Texture.html">Texture</a></code> objects created
- during the last call to <code><a href="../../../../reference/com/viro/core/Object3D.html#loadModel(com.viro.core.ViroContext, android.net.Uri, com.viro.core.Object3D.Type, com.viro.core.AsyncObject3DListener)">loadModel(ViroContext, Uri, Type, AsyncObject3DListener)</a></code>.
+ during the last call to <code><a href="../../../../reference/com/viro/core/Object3D.html#loadModel(com.mendix.viro.core.ViroContext, android.net.Uri, com.mendix.viro.core.Object3D.Type, com.mendix.viro.core.AsyncObject3DListener)">loadModel(ViroContext, Uri, Type, AsyncObject3DListener)</a></code>.
  <p>
  This is especially useful when removing models with a large memory footprint, to ensure
  they're deleted quickly without having to wait for GC. Note this method does not dispose of
- <i>this</i> Node; you can still load a new model into this Node via <code><a href="../../../../reference/com/viro/core/Object3D.html#loadModel(com.viro.core.ViroContext, android.net.Uri, com.viro.core.Object3D.Type, com.viro.core.AsyncObject3DListener)">loadModel(ViroContext, Uri, Type, AsyncObject3DListener)</a></code>.
+ <i>this</i> Node; you can still load a new model into this Node via <code><a href="../../../../reference/com/viro/core/Object3D.html#loadModel(com.mendix.viro.core.ViroContext, android.net.Uri, com.mendix.viro.core.Object3D.Type, com.mendix.viro.core.AsyncObject3DListener)">loadModel(ViroContext, Uri, Type, AsyncObject3DListener)</a></code>.
 </p></p>
 
 </div>
@@ -1214,7 +1214,7 @@ void disposeModel ()</pre>
 </div>
 
 
-<A NAME="loadModel(com.viro.core.ViroContext, android.net.Uri, com.viro.core.Object3D.Type, com.viro.core.AsyncObject3DListener)"></A>
+<A NAME="loadModel(com.mendix.viro.core.ViroContext, android.net.Uri, com.mendix.viro.core.Object3D.Type, com.mendix.viro.core.AsyncObject3DListener)"></A>
 
 <div class="api apilevel-">
     <h3 class="api-name">loadModel</h3>
@@ -1304,7 +1304,7 @@ void setLightReceivingBitMask (int bitMask)</pre>
 </div>
 
 
-<A NAME="setMorphMode(com.viro.core.Object3D.MorphMode)"></A>
+<A NAME="setMorphMode(com.mendix.viro.core.Object3D.MorphMode)"></A>
 
 <div class="api apilevel-">
     <h3 class="api-name">setMorphMode</h3>

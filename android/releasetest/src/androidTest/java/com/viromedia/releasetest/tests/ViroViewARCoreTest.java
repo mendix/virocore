@@ -25,11 +25,8 @@ package com.viromedia.releasetest.tests;
 
 import com.google.ar.core.Config;
 import com.google.ar.core.Session;
-import com.google.ar.core.exceptions.UnavailableApkTooOldException;
-import com.google.ar.core.exceptions.UnavailableArcoreNotInstalledException;
 import com.google.ar.core.exceptions.UnavailableException;
-import com.google.ar.core.exceptions.UnavailableSdkTooOldException;
-import com.viro.core.ViroViewARCore;
+import com.mendix.viro.core.ViroViewARCore;
 import com.viromedia.releasetest.ViroReleaseTestActivity;
 
 import org.junit.Before;

@@ -26,21 +26,20 @@ package com.viromedia.releasetest.tests;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
-import android.support.test.espresso.core.deps.guava.collect.Iterables;
-import android.util.Log;
+import androidx.test.espresso.core.deps.guava.collect.Iterables;
 
-import com.viro.core.ARScene;
-import com.viro.core.AmbientLight;
-import com.viro.core.Box;
-import com.viro.core.DirectionalLight;
-import com.viro.core.Material;
-import com.viro.core.Node;
-import com.viro.core.Scene;
-import com.viro.core.Sound;
-import com.viro.core.Sphere;
-import com.viro.core.Texture;
-import com.viro.core.Vector;
-import com.viro.core.VideoTexture;
+import com.mendix.viro.core.ARScene;
+import com.mendix.viro.core.AmbientLight;
+import com.mendix.viro.core.Box;
+import com.mendix.viro.core.DirectionalLight;
+import com.mendix.viro.core.Material;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.Scene;
+import com.mendix.viro.core.Sound;
+import com.mendix.viro.core.Sphere;
+import com.mendix.viro.core.Texture;
+import com.mendix.viro.core.Vector;
+import com.mendix.viro.core.VideoTexture;
 
 import org.junit.Test;
 

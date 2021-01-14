@@ -25,15 +25,14 @@ package com.viromedia.releasetest.tests;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.util.Log;
 
-import com.viro.core.AmbientLight;
-import com.viro.core.Geometry;
-import com.viro.core.Submesh;
-import com.viro.core.Material;
-import com.viro.core.Node;
-import com.viro.core.Texture;
-import com.viro.core.Vector;
+import com.mendix.viro.core.AmbientLight;
+import com.mendix.viro.core.Geometry;
+import com.mendix.viro.core.Submesh;
+import com.mendix.viro.core.Material;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.Texture;
+import com.mendix.viro.core.Vector;
 
 import org.junit.Test;
 

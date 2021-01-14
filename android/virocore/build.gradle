@@ -3,11 +3,11 @@ apply from: 'preprocessor.gradle'
 
 android {
     flavorDimensions  "product"
-    compileSdkVersion 28
+    compileSdkVersion 30
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 28
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -72,16 +72,20 @@ android {
     packagingOptions {
         // x86 is currently not supported, so do not copy over these resources
         exclude '**/x86/**'
+        // No the most safe way; but time wise efficient. Can lead to amazing results; but most likely
+        // we are safe as long as all libraries are on the same version..
+        pickFirst '**/*.so'
     }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.google.android.exoplayer:exoplayer:2.7.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.3'
     implementation project(':libs:gvr')
     implementation project(':libs:arcore')
-    implementation 'com.google.protobuf.nano:protobuf-javanano:3.0.0-alpha-7'
+    implementation 'com.google.protobuf.nano:protobuf-javanano:3.1.0'
 }
 
 // We have to add dependencies to Android tasks in this deferred way because these tasks

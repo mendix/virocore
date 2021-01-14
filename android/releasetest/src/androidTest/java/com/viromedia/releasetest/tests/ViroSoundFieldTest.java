@@ -25,20 +25,19 @@ package com.viromedia.releasetest.tests;
 
 import android.graphics.Color;
 import android.net.Uri;
-import android.support.test.espresso.core.deps.guava.collect.Iterables;
+import androidx.test.espresso.core.deps.guava.collect.Iterables;
 
-import com.viro.core.Node;
-import com.viro.core.SoundField;
-import com.viro.core.Text;
-import com.viro.core.Vector;
-import com.viro.core.ViroContext;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.SoundField;
+import com.mendix.viro.core.Text;
+import com.mendix.viro.core.Vector;
+import com.mendix.viro.core.ViroContext;
 
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Random;
 
 /**
  * Created by manish on 11/6/17.

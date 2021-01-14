@@ -25,12 +25,12 @@ package com.viromedia.releasetest.tests;
 
 import android.graphics.Color;
 import android.net.Uri;
-import android.support.test.espresso.core.deps.guava.collect.Iterables;
+import androidx.test.espresso.core.deps.guava.collect.Iterables;
 
-import com.viro.core.Node;
-import com.viro.core.SpatialSound;
-import com.viro.core.Text;
-import com.viro.core.Vector;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.SpatialSound;
+import com.mendix.viro.core.Text;
+import com.mendix.viro.core.Vector;
 
 import org.junit.Test;
 

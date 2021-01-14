@@ -24,18 +24,13 @@
 package com.viromedia.releasetest.tests;
 
 import android.graphics.Color;
-import android.net.Uri;
 
-import com.viro.core.ARScene;
-import com.viro.core.AmbientLight;
-import com.viro.core.Box;
-import com.viro.core.Material;
-import com.viro.core.Node;
-import com.viro.core.Object3D;
-import com.viro.core.OmniLight;
-import com.viro.core.Text;
-import com.viro.core.Texture;
-import com.viro.core.Vector;
+import com.mendix.viro.core.Box;
+import com.mendix.viro.core.Material;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.OmniLight;
+import com.mendix.viro.core.Text;
+import com.mendix.viro.core.Vector;
 
 import org.junit.Test;
 

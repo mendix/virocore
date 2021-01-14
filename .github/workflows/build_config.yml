@@ -2,36 +2,36 @@ name: Viro Renderer CI Pipeline
 on: [push]
 
 jobs:
-  android_virocore_build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: set up JDK 1.8
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.8
-    - name: assmble release ViroCore
-      run: bash ./gradlew :virocore:assembleRelease
-      working-directory: ./android
-    - name: Upload result ViroCore
-      uses: actions/upload-artifact@v1
-      with: 
-        name: virocore.aar
-        path: ./android/virocore/build/outputs/aar/virocore-release-v_1_17_0.aar
+  # android_virocore_build:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: actions/checkout@v2
+  #   - name: set up JDK 1.8
+  #     uses: actions/setup-java@v1
+  #     with:
+  #       java-version: 1.8
+  #   - name: assemble release ViroCore
+  #     run: bash ./gradlew :virocore:assembleRelease
+  #     working-directory: ./android
+  #   - name: Upload result ViroCore
+  #     uses: actions/upload-artifact@v2
+  #     with: 
+  #       name: virocore.aar
+  #       path: ./android/virocore/build/outputs/aar/virocore-release-v_1_17_0.aar
         
   android_viroreact_build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: set up JDK 1.8
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: assmble release ViroReact
+    - name: assemble release ViroReact
       run: bash ./gradlew :viroreact:assembleRelease
       working-directory: ./android
     - name: Upload result ViroReact
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v2
       with: 
         name: viroreact.aar
         path: ./android/viroreact/build/outputs/aar/viroreact-release.aar
@@ -39,11 +39,18 @@ jobs:
   ios_viroreact_build:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Install gpg
-        run: brew install gnupg
-      - name: Set XCode Version 11.2
-        run: sudo xcode-select -s /Applications/Xcode_11.2.app
+      - uses: actions/checkout@v2
+      - name: Set XCode Version 12.3
+        run: sudo xcode-select -s /Applications/Xcode_12.3.app
+      - name: Setup temp keychain
+        run: |
+          KEYCHAIN_PATH=$RUNNER_TEMP/tmp_keychain
+          echo ${{ secrets.IOS_CERTIFICATE }} | base64 --decode > cert.p12
+          security create-keychain -p ${{ secrets.TMP_KEYCHAIN_PASSWORD }} $KEYCHAIN_PATH
+          security set-keychain-settings -lut 21600 $KEYCHAIN_PATH
+          security unlock-keychain -p ${{ secrets.TMP_KEYCHAIN_PASSWORD }} $KEYCHAIN_PATH
+          security import ./cert.p12 -P ${{ secrets.IOS_CERTIFICATE_PWD }} -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
+          security list-keychain -d user -s $KEYCHAIN_PATH
       - name: Install pod dependencies
         run: |
           cd ios
@@ -51,16 +58,20 @@ jobs:
         shell: bash
       - name: Xcodebuild iOS Renderer (non-static)
         run: |
-          cd ios && xcodebuild \
+          cd ios && mkdir ./dist && xcodebuild \
             -workspace ViroRenderer.xcworkspace \
             -scheme ViroKit \
-            -sdk iphoneos13.2 \
+            -sdk iphoneos14.3 \
             -configuration Release \
+            -derivedDataPath ./dist
+            CODE_SIGN_STYLE=Manual \
+            DEVELOPMENT_TEAM="${{ secrets.IOS_DEVELOPMENT_TEAM }}"  \
+            CODE_SIGN_IDENTITY="${{ secrets.IOS_SIGN_IDENTITY }}" \
             IPHONEOS_DEPLOYMENT_TARGET=9.0
+          cp ./ViroKit.podspec ./dist/build/Products/Release-iphoneos
             
       - name: Upload iOS Renderer artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with: 
-          name: ios_dist.tgz
-          path: ../viro/ios/dist/
-
+          name: ios_dist
+          path: ./ios/dist/build/Products/Release-iphoneos/*

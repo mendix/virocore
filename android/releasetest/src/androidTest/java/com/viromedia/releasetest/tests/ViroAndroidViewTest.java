@@ -26,22 +26,21 @@ package com.viromedia.releasetest.tests;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.viro.core.AmbientLight;
-import com.viro.core.AndroidViewTexture;
-import com.viro.core.ClickListener;
-import com.viro.core.ClickState;
-import com.viro.core.Material;
-import com.viro.core.Node;
-import com.viro.core.Quad;
-import com.viro.core.Vector;
-import com.viromedia.releasetest.R;
+import com.mendix.viro.core.AmbientLight;
+import com.mendix.viro.core.AndroidViewTexture;
+import com.mendix.viro.core.ClickListener;
+import com.mendix.viro.core.ClickState;
+import com.mendix.viro.core.Material;
+import com.mendix.viro.core.Node;
+import com.mendix.viro.core.Quad;
+import com.mendix.viro.core.Vector;
+
 import org.junit.Test;
 
 import java.io.IOException;

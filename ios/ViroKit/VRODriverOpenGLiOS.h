@@ -88,6 +88,14 @@ public:
         std::shared_ptr<VRODriverOpenGL> driver = shared_from_this();
         return std::make_shared<VROVideoTextureCacheOpenGL>(_eaglContext, driver);
     }
+    
+    std::shared_ptr<VROSound> newSound(std::string resource, VROResourceType resourceType, VROSoundType type) {
+        return nil;
+    }
+
+    std::shared_ptr<VROSound> newSound(std::shared_ptr<VROSoundData> data, VROSoundType type) {
+        return nil;
+    }
 
     std::shared_ptr<VROAudioPlayer> newAudioPlayer(std::string path, bool isLocal) {
         // TODO: VIRO-756 make use of local flag (always assumes it's a web file)
